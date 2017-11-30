@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Person } from '../person';
-
+import { ActivatedRoute, Router} from '@angular/router'
 @Component({
   selector: 'app-test1',
   templateUrl: './test1.component.html',
@@ -9,7 +9,10 @@ import { Person } from '../person';
 })
 export class Test1Component implements OnInit {
 
-  constructor() {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) {
     let dig: Person;
     let promise = new Promise(resolve => {
       setTimeout(() => {
