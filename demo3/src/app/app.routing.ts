@@ -4,8 +4,9 @@ import { PagenotfindComponent } from './common/pagenotfind.component'
 const routes: Routes = [
   {
     path: '**',
-    component:PagenotfindComponent
+    component: PagenotfindComponent
   }
 ];
 
-export const AppRoutes = RouterModule.forChild(routes);
+
+export const AppRoutes = RouterModule.forRoot(routes);

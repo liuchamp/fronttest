@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CommonComponent } from './common/common.component';
 import { PagenotfindComponent } from './common/pagenotfind.component';
-import { AppRoutes } from './app.module';
+import { AppRoutes } from './app.routing';
+import { Test1Module } from './test1/test1.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AppRoutes } from './app.module';
   ],
   imports: [
     BrowserModule,
+    Test1Module,
     AppRoutes
   ],
   providers: [],
