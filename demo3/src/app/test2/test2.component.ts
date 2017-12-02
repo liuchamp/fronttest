@@ -14,4 +14,7 @@ export class Test2Component implements OnInit {
   ngOnInit() {
   }
 
+  changeRouter(){
+    this.router.navigateByUrl("test1");
+  }
 }
