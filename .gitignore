@@ -3,7 +3,49 @@
 /TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
 build/    # 忽略 build/ 目录下的所有文件
 doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
-dist/*    # 会忽略所有的文件
 
 
 
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+*/dist
+*/tmp
+*/out-tsc
+
+# dependencies
+*node_modules
+
+# IDEs and editors
+*/.idea
+*/.project
+*/.classpath
+*/.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+*/.sass-cache
+*/connect.lock
+*/coverage
+*/libpeerconnection.log
+*/npm-debug.log
+*/testem.log
+*/typings
+
+# e2e
+*/e2e/*.js
+*/e2e/*.map
+
+# System Files
+*/.DS_Store
+*/Thumbs.db
