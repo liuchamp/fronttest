@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { Demo1Component } from './demo1.component';
 import { Counter } from './counter';
 import { Wrapper } from './wrapper';
+import { Wapper2Component } from './wrapper2';
+import { Wapper3Component } from './wrapper3';
 @NgModule({
   imports: [
     CommonModule,
     Demo1Routes
   ],
-  declarations: [Demo1Component, Wrapper, Counter]
+  declarations: [Demo1Component, Wrapper, Counter, Wapper2Component, Wapper3Component ]
 })
 export class Demo1Module { }
 
