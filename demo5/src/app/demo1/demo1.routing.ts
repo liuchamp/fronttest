@@ -1,5 +1,7 @@
+import { Counter } from './counter';
 import { Demo1Component } from './demo1.component';
 import { Routes, RouterModule } from '@angular/router';
+import { Wrapper } from './wrapper';
 
 const routes: Routes = [
   {

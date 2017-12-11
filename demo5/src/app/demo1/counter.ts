@@ -7,11 +7,12 @@ let instances = 0;
     template: `<h1>{{this.id}}</h1>`
 })
 
-export class NameComponent implements OnInit {
+export class Counter implements OnInit {
     id: number;
     
     constructor() {
       this.id = ++instances;
+      console.log('counter is '+ this.id);
     }
 
     ngOnInit() { }
