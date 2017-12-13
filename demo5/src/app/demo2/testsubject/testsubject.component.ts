@@ -1,5 +1,8 @@
+import { MessageService } from './../message.service';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rx';
+
+import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'app-testsubject',
   templateUrl: './testsubject.component.html',
@@ -7,9 +10,18 @@ import { Observable } from 'rx';
 })
 export class TestsubjectComponent implements OnInit {
 
-  constructor() { }
+  currentmessages: any;
+  constructor(private message: MessageService) {
+ 
+    
+   }
 
   ngOnInit() {
   }
 
+
+  sendMessage() {
+
+    this.message.send(this.currentmessages);
+  }
 }

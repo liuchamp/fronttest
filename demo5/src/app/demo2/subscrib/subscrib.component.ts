@@ -1,3 +1,4 @@
+import { MessageService } from './../message.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscribComponent implements OnInit {
 
-  constructor() { }
+  message: any;
+  constructor(private msv: MessageService) { }
 
   ngOnInit() {
+    this.msv.get().subscribe((result) => {
+        this.message = result;
+    });
   }
 
 }
