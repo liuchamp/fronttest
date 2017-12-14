@@ -6,14 +6,15 @@ import { CarComponent } from './component/car.component';
 import { CatComponent } from './component/cat.component';
 import { DriverComponent } from './component/driver.component';
 
-
+import { HttpModule } from '@angular/http';
 
 /**
  * 用于测试http
  */
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule,    
+    HttpModule,
     Demo3Routes
   ],
   declarations : [Demo3Component, CarComponent, CatComponent, DriverComponent]
