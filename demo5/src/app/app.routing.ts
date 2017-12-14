@@ -10,6 +10,10 @@ const routes: Routes = [
     loadChildren: './demo2/demo2.module#Demo2Module'
   },
   {
+    path: 'demo3',
+    loadChildren : './demo3/demo3.module#Demo3Module'
+  },
+  {
     path: 'home',
     loadChildren: './home/home.module#HomeModule'
   },
