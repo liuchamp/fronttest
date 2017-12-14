@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core/src/metadata/directives';
 
 @Component({
   selector: 'app-car',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarComponent implements OnInit {
 
+  @Input() licensePlate: number;
+  @Input() brand?: string;
+  @Input() c?: number;
+  @Input() d?: string;
+
+  
   constructor() { }
 
   ngOnInit() {

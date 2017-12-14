@@ -1,3 +1,4 @@
+import { Car } from './util/types';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo3Component implements OnInit {
 
+  cars: Car
   constructor() { }
 
   ngOnInit() {
