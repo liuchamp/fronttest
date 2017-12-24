@@ -11,7 +11,10 @@ export class WorkspaceComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('./assets/test.json').subscribe(res => console.log(res));
+    this.http.get('./assets/test.json').subscribe(res => {
+      console.log(res);
+      console.log(res['language']);
+    });
   }
 
 }
