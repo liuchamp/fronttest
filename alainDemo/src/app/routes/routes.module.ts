@@ -1,3 +1,4 @@
+import { TradeModule } from './trade/trade.module';
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@shared/shared.module';
