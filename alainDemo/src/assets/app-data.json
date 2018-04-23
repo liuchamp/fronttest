@@ -46,6 +46,12 @@
             "link": "/widgets",
             "icon": "icon-grid",
             "badge": 2
+        }, {
+            "text": "trade",
+            "i18n": "trade",
+            "link": "/trade/list",
+            "icon": "icon-grid",
+            "badge": 2
         }]
     }, {
         "text": "Alain",
