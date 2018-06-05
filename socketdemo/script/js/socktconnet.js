@@ -2,7 +2,7 @@ var websocket = null;
 
 //判断当前浏览器是否支持WebSocket
 if ('WebSocket' in window) {
-    websocket = new WebSocket("ws://localhost:8090/websocket");
+    websocket = new WebSocket("ws://localhost:8090/path");
 }
 else {
     alert('Not support websocket')
@@ -20,7 +20,6 @@ websocket.onopen = function (event) {
 
 //接收到消息的回调方法
 websocket.onmessage = function (event) {
-    console.log(event);
     setMessageInnerHTML(event.data);
 }
 
